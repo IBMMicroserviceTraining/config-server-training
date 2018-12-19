@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:IBMMicroserviceTraining/{application}_config.git
+          search-paths: dev,test
+
+server:
+  port: 8600
+
+      
